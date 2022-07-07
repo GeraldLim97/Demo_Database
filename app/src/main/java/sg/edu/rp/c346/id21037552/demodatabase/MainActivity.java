@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 ArrayList<Task> al = db2.getTasks(asc);
                 db2.close();;
                 asc = !asc;
-                aa = new ArrayAdapter<>(MainActivity.this),
+                aa = new ArrayAdapter<>(MainActivity.this,
                 android.R.layout.simple_list_item_1, al);
                 lv.setAdapter(aa);
 
